@@ -14,3 +14,7 @@ express my love
 > 
 
 参考之上的github项目进行修改
+
+
+
+Bug fixed:  in funtion timer() ,the month of date is between 0-11,and the origin js has this error.
