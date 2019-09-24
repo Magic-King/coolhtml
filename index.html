@@ -107,10 +107,12 @@
         function timer() {
 			//time
             var start = new Date(2019, 8, 22); // set up the time
-			console.log(start);
-            var x = 0;//x is the time by ms
-			var t = new Date() - start;	
-			console.log(t);
+			//console.log(start);
+			var hours = 0;
+			var minutes = 0;
+            var x = 3600*1000*hours + 60*1000*minutes;//x is the time by ms
+			var t = new Date() - start - x;	
+			//console.log(t);
             var h = ~~((t / 1000 / 60 / 60 ) % 24);
             if (h < 10) {
                 h = "0" + h;
