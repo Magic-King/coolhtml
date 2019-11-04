@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description"
+content="在线函数绘图">
+<meta name="keywords" content="在线函数绘图">
+  <title>在线函数绘图</title>
+    <link rel="stylesheet" href="css/mf.css" media="screen" type="text/css" />
+</head>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+<body align="center">
+<div id="top">
+<div style="text-align:center;clear:both">
+</div>
+  	f(x) = <input type="text" value="(x+4)^2*(x-6)+60sinx+10x" id="input" /><input type="button" value="绘图" id="simplify" />
+  </div>
+<table border="1" align="center">
+<th>加法（X+Y）</th>
+<th>减法（X-Y）</th>
+<th>乘法（x*y）或（x）（y）</th>
+<th>除法（X/Y）</th>
+<th>指数（x^ y或x^（1／y）的根）</th>
+<th>sin, cos, tan, asin, acos, atan, abs</th>
+<th>单变量求值（包含表达式字符串中的“x”）</th>
+</table>
+<div id="wrapper">
+<div id="result"></div> 
+</div>
+<script src="js/mf.js"></script>
+</body>
+</html>
